@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A4 Aesthetics & Design</title>
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./icon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/site.webmanifest">
+  <meta name="description" content="A4 Aesthetics & Design â€” architecture, construction, interiors and 3D visualisation.">
+</head>
+<body class="landing-page">
+  <div class="room" id="room">
+    <div class="room__image" aria-hidden="true"></div>
+    <div class="room__veil" aria-hidden="true"></div>
+    <div class="room__grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="A4 Aesthetics and Design home">
+        <span class="brand__mark">A4</span>
+        <span class="brand__name">Aesthetics<br>&amp; Design</span>
+      </a>
+
+      <div class="header-note">Architecture Â· Build Â· Interiors</div>
+
+      <nav class="landing-nav" aria-label="Primary navigation">
+        <a class="light-gated" href="categories.html">Projects</a>
+        <a class="light-gated" href="categories.html#services">Services</a>
+        <a class="light-gated" href="gallery.html">Gallery</a>
+        <a class="light-gated" href="categories.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="chandelier chandelier--real" aria-hidden="true">
+      <span class="chandelier__ceiling-cap"></span>
+      <span class="chandelier__chain"></span>
+      <div class="chandelier__body">
+        <span class="chandelier__crown"></span>
+        <span class="chandelier__ring chandelier__ring--top"></span>
+        <span class="chandelier__ring chandelier__ring--mid"></span>
+        <span class="chandelier__ring chandelier__ring--low"></span>
+
+        <span class="chandelier__arm chandelier__arm--left"></span>
+        <span class="chandelier__arm chandelier__arm--right"></span>
+        <span class="chandelier__arm chandelier__arm--left-inner"></span>
+        <span class="chandelier__arm chandelier__arm--right-inner"></span>
+
+        <div class="chandelier__lamp chandelier__lamp--1"><span class="chandelier__cup"></span><span class="chandelier__bulb"></span></div>
+        <div class="chandelier__lamp chandelier__lamp--2"><span class="chandelier__cup"></span><span class="chandelier__bulb"></span></div>
+        <div class="chandelier__lamp chandelier__lamp--3"><span class="chandelier__cup"></span><span class="chandelier__bulb"></span></div>
+        <div class="chandelier__lamp chandelier__lamp--4"><span class="chandelier__cup"></span><span class="chandelier__bulb"></span></div>
+        <div class="chandelier__lamp chandelier__lamp--5"><span class="chandelier__cup"></span><span class="chandelier__bulb"></span></div>
+
+        <span class="chandelier__crystal chandelier__crystal--1"></span>
+        <span class="chandelier__crystal chandelier__crystal--2"></span>
+        <span class="chandelier__crystal chandelier__crystal--3"></span>
+        <span class="chandelier__crystal chandelier__crystal--4"></span>
+        <span class="chandelier__crystal chandelier__crystal--5"></span>
+        <span class="chandelier__crystal chandelier__crystal--6"></span>
+        <span class="chandelier__crystal chandelier__crystal--7"></span>
+      </div>
+      <div class="chandelier__glow"></div>
+    </div>
+
+    <main class="hero">
+      <p class="hero__eyebrow">Designing spaces that feel as good as they look.</p>
+      <h1>We shape <em>space,</em><br>structure and experience.</h1>
+      <p class="hero__copy">
+        A4 Aesthetics &amp; Design creates thoughtful architecture, precise construction,
+        refined interiors and compelling 3D visualisations for homes, commercial spaces and ambitious brands.
+      </p>
+      <div class="hero__actions">
+        <a class="explore-button light-gated" id="exploreButton" href="categories.html" aria-disabled="true" tabindex="-1">
+          <span>Explore our work</span>
+          <span class="explore-button__arrow" aria-hidden="true">â†—</span>
+        </a>
+        <a class="secondary-button light-gated" href="gallery.html" aria-disabled="true" tabindex="-1">Open gallery</a>
+      </div>
+    </main>
+
+    <aside class="light-control" aria-label="Room light control">
+      <div class="light-pointer" aria-hidden="true">
+        <span class="light-pointer__line"></span>
+        <span class="light-pointer__text">Tap the light switch</span>
+      </div>
+      <div class="light-control__label">
+        <span>01</span>
+        <p>Turn on the space</p>
+      </div>
+      <button class="wall-switch" id="lightSwitch" type="button" role="switch" aria-checked="false" aria-label="Turn on the room light">
+        <span class="wall-switch__plate">
+          <span class="wall-switch__screw wall-switch__screw--top"></span>
+          <span class="wall-switch__rocker">
+            <span class="wall-switch__indicator"></span>
+          </span>
+          <span class="wall-switch__screw wall-switch__screw--bottom"></span>
+        </span>
+      </button>
+      <p class="light-control__status" id="lightStatus" aria-live="polite">The studio is resting</p>
+    </aside>
+
+    <div class="room-index" aria-hidden="true">A4 / 2026</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

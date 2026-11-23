@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A4 Aesthetics & Design</title>
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./icon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/site.webmanifest">
+  <meta name="description" content="A4 Aesthetics & Design â€” architecture, construction, interiors and 3D visualisation.">
+</head>
+<body class="gallery-page">
+  <header class="portfolio-header gallery-header">
+    <a class="brand brand--dark" href="index.html" aria-label="A4 Aesthetics and Design home">
+      <img src="./assets/images/A4_logo.png" alt="A4 Aesthetics and Design home">
+      <!-- <span class="brand__mark">A4</span>
+      <span class="brand__name">Aesthetics<br>&amp; Design</span> -->
+    </a>
+    <nav class="portfolio-mini-nav" aria-label="Gallery navigation">
+      <a class="back-link" href="categories.html"><span aria-hidden="true">â†</span> Services</a>
+      <a class="back-link" href="#gallery-grid">Jump to images <span aria-hidden="true">â†“</span></a>
+    </nav>
+    <a class="contact-pill" href="categories.html#contact">Start a project</a>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="gallery-hero__copy">
+        <p class="section-kicker">A4 gallery</p>
+        <h1>Spaces, moods<br><em>and details.</em></h1>
+        <p>
+          A simple gallery page for showcasing completed work, concept visuals and presentation-ready images.
+          Click any image to expand it.
+        </p>
+      </div>
+      <div class="gallery-hero__art" aria-hidden="true"></div>
+    </section>
+
+    <section class="gallery-filter-strip" aria-label="Gallery categories">
+      <span>Interior Design</span>
+      <span>3D Visualisation</span>
+      <span>Commercial Spaces</span>
+      <span>Residential Spaces</span>
+      <span>Spatial Styling</span>
+    </section>
+
+    <section class="gallery-grid-section" id="gallery-grid">
+      <div class="gallery-grid">
+        <button class="gallery-card" type="button" data-title="Reception Lounge" data-category="Commercial Interior" data-image="./assets/images/gallery_render_wide.webp">
+          <img src="./assets/images/gallery_render_wide.webp" alt="Warm-toned reception lounge designed by A4 Aesthetics and Design">
+          <span class="gallery-card__meta"><strong>Reception Lounge</strong><em>Commercial Interior</em></span>
+        </button>
+        <button class="gallery-card gallery-card--tall" type="button" data-title="Living Room Feature Wall" data-category="Residential Interior" data-image="./assets/images/gallery_interior_detail.webp">
+          <img src="./assets/images/gallery_interior_detail.webp" alt="Contemporary living room with marble feature wall">
+          <span class="gallery-card__meta"><strong>Living Room Feature Wall</strong><em>Residential Interior</em></span>
+        </button>
+        <button class="gallery-card" type="button" data-title="Ambient Ceiling Detail" data-category="Lighting & Styling" data-image="./assets/images/gallery_ceiling_glow.webp">
+          <img src="./assets/images/gallery_ceiling_glow.webp" alt="Ambient ceiling lighting and styling detail">
+          <span class="gallery-card__meta"><strong>Ambient Ceiling Detail</strong><em>Lighting & Styling</em></span>
+        </button>
+        <button class="gallery-card gallery-card--wide" type="button" data-title="Render Detail" data-category="3D Visualisation" data-image="./assets/images/gallery_render_detail.webp">
+          <img src="./assets/images/gallery_render_detail.webp" alt="Interior render detail by A4 Aesthetics and Design">
+          <span class="gallery-card__meta"><strong>Render Detail</strong><em>3D Visualisation</em></span>
+        </button>
+        <button class="gallery-card" type="button" data-title="Lounge Composition" data-category="Spatial Styling" data-image="./assets/images/gallery_lounge_crop.webp">
+          <img src="./assets/images/gallery_lounge_crop.webp" alt="Lounge composition and furniture styling">
+          <span class="gallery-card__meta"><strong>Lounge Composition</strong><em>Spatial Styling</em></span>
+        </button>
+        <button class="gallery-card" type="button" data-title="Concept Render" data-category="3D Design" data-image="./assets/images/fbb.webp">
+          <img src="./assets/images/fbb.webp" alt="Concept interior render by A4 Aesthetics and Design">
+          <span class="gallery-card__meta"><strong>Concept Render</strong><em>3D Design</em></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close image viewer">Ã—</button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
